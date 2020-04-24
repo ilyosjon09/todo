@@ -33,9 +33,10 @@ function TodoForm({ addTodo }) {
     <form onSubmit={handleSubmit}>
       <input 
         type="text"
-        className="block w-full rounded bg-white shadow-inner p-4 mb-4 border border-transparent hover:border-yellow-200" 
+        className="block w-full rounded bg-white p-4 mb-4 border border-transparent hover:border-blue-200 shadow-xl" 
         value={value}
-        onChange={e => setValue(e.target.value)} 
+        onChange={e => setValue(e.target.value)}
+        placeholder="Type todo and hit Enter" 
       />
     </form>
   );
