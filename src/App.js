@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {ReactComponent as XIcon} from './x-icon.svg';
 
 function Todo ({ todo, index, completeTodo, removeTodo }){
   return (
@@ -12,9 +13,9 @@ function Todo ({ todo, index, completeTodo, removeTodo }){
         e.stopPropagation();
         removeTodo(index);
       }}
-      className="rounded px-4 py-2 hover:shadow-xl border border-red-200 font-bold text-red-500 hover:bg-red-500 hover:text-white"
+      className="rounded p-2 hover:shadow-xl border border-red-200 font-bold text-red-500 hover:bg-red-500 hover:text-white"
     >
-      x
+      <XIcon></XIcon>
     </button>
   </div>);
 } 
