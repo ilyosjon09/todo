@@ -80,7 +80,7 @@ function App() {
     <div>
       <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) => (<Todo key={index} index={index} todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} />))}
-      <div><a href="https://t.me/ilyosjon_k">@ilyosjon_k</a></div>
+      <div className="text-center text-blue-500 hover:text-blue-400"><a href="https://t.me/ilyosjon_k">@ilyosjon_k</a></div>
     </div>
   );
 }
