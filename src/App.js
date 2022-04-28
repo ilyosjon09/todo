@@ -78,8 +78,9 @@ function App() {
 
   return (
     <div>
-      {todos.map((todo, index) => (<Todo key={index} index={index} todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} />))}
       <TodoForm addTodo={addTodo} />
+      {todos.map((todo, index) => (<Todo key={index} index={index} todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} />))}
+      <div><a href="https://t.me/ilyosjon_k">@ilyosjon_k</a></div>
     </div>
   );
 }
