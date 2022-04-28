@@ -78,8 +78,8 @@ function App() {
 
   return (
     <div>
-      <h1 className="text-center font-bold text-xl">Simple ToDo</h1>
-      <TodoForm className="mt-2" addTodo={addTodo} />
+      <h1 className="mb-4 text-center font-bold text-xl">Simple ToDo</h1>
+      <TodoForm addTodo={addTodo} />
       {todos.map((todo, index) => (<Todo key={index} index={index} todo={todo} completeTodo={completeTodo} removeTodo={removeTodo} />))}
       <div className="text-center text-blue-500 hover:text-blue-400"><a href="https://t.me/ilyosjon_k">@ilyosjon_k</a></div>
     </div>
